@@ -1,6 +1,6 @@
 const {config} = require('dotenv')
 const {Client,Events,GatewayIntentBits,Collection} = require('discord.js');
-const {token} = require('./config.json');
+const {token} = require(process.env.token);
 const { channel } = require('diagnostics_channel');
 
 var bannedWord = ["cazzo","figa","culo"];
